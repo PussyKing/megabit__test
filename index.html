@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Magebit Test Work</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+
+
+		<div class="content-inactive">
+			<div class="left">
+				<h2>Don't have an account?</h2>
+				<div class="line">_____</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum sem eu felis sollicitudin blandit. Maecenas at pharetra massa, at interdum metus.</p>
+				<button onclick="changeActiveContent('signup')">sign up</button>
+			</div>
+
+
+			<div class="right">
+				<h2>Have an account?</h2>
+				<div class="line">_____</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum amet.</p>
+				<button onclick="changeActiveContent('login')">login</button>
+			</div>
+		</div>
+
+
+
+		<div class="content-active">
+			<div class="content-wrapper active-left invisible hidden" id="signup">
+				<h2>Sign Up<img src="img/logo.png" alt="logo"></h2>
+				<div class="line">_____</div>
+
+				<form method="POST">
+					<div class="input-label">
+						<label>Name:<span>*</span></label>
+						<div class="input-icon icon-name-inactive"></div>
+					</div>
+					<input class="text-input" type="text" name="txt_name" 
+						value="" 
+						pattern="^ *[a-zA-Z]+ +[a-zA-Z]+ *[a-zA-Z]* *" 
+						title="Name <Middle-name> Surname" required>
+					<div class="input-label">
+						<label>Email:<span>*</span></label>
+						<div class="input-icon icon-email-inactive"></div>
+					</div>
+					<input class="text-input" type="email" name="txt_email" 
+						value="" required>
+					<div class="input-label">
+						<label>Password:<span>*</span></label>
+						<div class="input-icon icon-password-inactive"></div>
+					</div>
+					<input class="text-input" type="password" name="txt_password" value="" required>
+					<input type="submit" value="Submit" name="btn-signup">
+				</form> 
+			</div>
+
+
+			<div class="content-wrapper active-right" id="login">
+				<h2>Login<img src="img/logo.png" alt="logo"></h2>
+				<div class="line">_____</div>
+				<form method="POST">
+					<div class="input-label">
+						<label>Email:<span>*</span></label>
+						<div class="input-icon icon-email-inactive"></div>
+					</div>
+					<input class="text-input" type="email" name="txt_email" 
+						value="" required>
+					<div class="input-label">
+						<label>Password:<span>*</span></label>
+						<div class="input-icon icon-password-inactive"></div>
+					</div>
+					<input class="text-input" type="password" name="txt_password" value="" required>
+					<div class="login-button-wrapper">
+						<input type="submit" value="Login" name="btn-login">
+						<div class="forgot"><a href="#">Forgot?</a></div>
+					</div>
+				</form> 
+			</div>
+			
+			<div class="fold_top"></div> 
+			<div class="fold_mid"></div> 
+			<div class="fold_bot"></div>		
+		</div>
+		<div class="footer">
+            <p>All Rights Reserved “Magebit” 2016.</p>
+        </div>
+	</div>
+</div>
+
+
+
+	<script src="main.js"></script>
+</body>
+</html>
