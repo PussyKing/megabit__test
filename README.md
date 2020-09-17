@@ -1,4 +1,4 @@
-h1  Megabit test
+*  Megabit test
 
 
 https://pussyking.github.io/megabit__test/
